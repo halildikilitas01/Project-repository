@@ -8,12 +8,12 @@ app = Flask(__name__)
 @app.route("/")
 def head():
     first="This is my first conditions experience"
-    return render_template("index.html")
+    return render_template("index.html" , message = first ) 
 
 
 # Create a function named header which prints numbers elements of list one by one in `index.html` 
 # and assign to the route of ('/')
-@app.route("/serdar")
+@app.route("/halil")
 def header():
     names =["Serdar", "Sam", "Jasper"]
     # numbers = range(1.11)
